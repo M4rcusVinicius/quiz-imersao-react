@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "primary": "#0c5fb9",
+    "light": "#fcfbfc",
+    "text": "#000"
+  },
+  "box": {
+    "borderRadius": "8px",
+    "border": "1px solid #8f8f8f;",
+    "boxShadow": "2px 2px 5px #8f8f8f;"
+  }
+}
