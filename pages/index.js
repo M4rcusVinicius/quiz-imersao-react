@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import React from 'react';
 import Head from '../src/components/Head';
 import Form from '../src/components/Form';
+import {Lock} from '@styled-icons/material/Lock';
 
 export default function Home() {
   const Wrapper = styled.section`
@@ -33,6 +34,7 @@ export default function Home() {
   return (
     <Wrapper>
       <Container>
+        <Lock />
         <Head />
         <Form />
       </Container>

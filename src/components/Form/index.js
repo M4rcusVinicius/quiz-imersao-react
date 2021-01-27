@@ -5,7 +5,7 @@ export default function Template() {
   return (
     <S.Wrapper onSubmit="">
       <S.NameInput placeholder="Digite seu nome" />
-      <S.Button><Play /></S.Button>
+      <S.Button>Button</S.Button>
     </S.Wrapper>
   );
 }
