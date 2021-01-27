@@ -1,27 +1,37 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import Head from 'next/head';
 
 const GlobalStyle = createGlobalStyle`
+
   body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Nunito', sans-serif;
   }
-`
+`;
 
 const theme = {
   colors: {
     primary: '#0070f3',
   },
-}
+};
 
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+      </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
