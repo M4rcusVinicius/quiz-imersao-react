@@ -33,7 +33,8 @@
     "colors": {
       "primary": "#0c5fb9",
       "light": "#fcfbfc",
-      "text": ""
+      "text": "#000",
+      "shadow": "#cbcfcf"
     },
     "borderRadius": "8px"
   }
