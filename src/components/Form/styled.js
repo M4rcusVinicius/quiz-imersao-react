@@ -20,27 +20,19 @@ export const NameInput = styled.input`
   margin-right: 1.2rem;
 `;
 
-const rotate = keyframes`
-  from {
-    transform: translate(0px);
-  }
-  to {
-    transform: translate(5px);
-  }
-`;
-
 export const Info = styled.span`
   font-size: 1rem;
   top: 4rem;
   left: 0rem;
   position: absolute;
-  background-color: ${theme.colors.erro};
+  background-color: ${theme.colors.alerts.error};
+  color:  ${theme.colors.alerts.errorText};
   padding: 0.4rem;
   width: 12rem;
   border: solid 1px #e0e0e0; 
   border-radius: ${theme.box.borderRadius};
-  transition: 200ms;
-  display: none;
+  transition: 500ms;
+  opacity: 0;
 
   &:after {
     content:"";
@@ -51,7 +43,16 @@ export const Info = styled.span`
     height: 0;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent ${theme.colors.erro} transparent; 
+    border-color: transparent transparent ${theme.colors.alerts.error} transparent; 
+  }
+`;
+
+const translate = keyframes`
+  from {
+    transform: translate(0px);
+  }
+  to {
+    transform: translate(5px);
   }
 `;
 
@@ -72,11 +73,11 @@ export const Button = styled.button`
   &:disabled {
     cursor: not-allowed;
     &:hover ~ ${Info} {
-      display: inline;
+      opacity: 1;
     }
 
     &:hover {
-      animation: ${rotate} 100ms alternate 4;
+      animation: ${translate} 100ms alternate 4;
     }
   }
 `;

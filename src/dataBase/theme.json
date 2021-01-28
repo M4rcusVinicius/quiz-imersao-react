@@ -4,7 +4,14 @@
     "dark": "#91b8e7",
     "light": "#fcfbfc",
     "text": "#000",
-    "erro": "red"
+    "alerts": {
+      "info": "#cce8f4",
+      "infoText": "#335873",
+      "warning": "#f8f3d6",
+      "warningText": "335873",
+      "error": "#ebc8c4",
+      "errorText": "#95282b"
+    }
   },
   "box": {
     "borderRadius": "8px",
