@@ -21,8 +21,10 @@ export default function Template() {
         placeholder="Digite seu nome"
       />
       <S.Button type="submit" disabled={name.length === 0}>
+        <S.ButtonText>Jogar</S.ButtonText>
         <PlayFill size="38" title="Unlock account" />
       </S.Button>
+      <S.Info>Escreva um nome valido</S.Info>
     </S.Wrapper>
   );
 }
