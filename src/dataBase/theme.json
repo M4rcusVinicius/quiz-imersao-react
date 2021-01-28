@@ -3,7 +3,8 @@
     "primary": "#0c5fb9",
     "dark": "#91b8e7",
     "light": "#fcfbfc",
-    "text": "#000"
+    "text": "#000",
+    "erro": "red"
   },
   "box": {
     "borderRadius": "8px",
