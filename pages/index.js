@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import React from 'react';
 import Head from '../src/components/Head';
 import Form from '../src/components/Form';
-import {Lock} from '@styled-icons/material/Lock';
 
 export default function Home() {
   const Wrapper = styled.section`
@@ -28,13 +27,12 @@ export default function Home() {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
+    margin-left: 5rem;
   `;
 
   return (
     <Wrapper>
       <Container>
-        <Lock />
         <Head />
         <Form />
       </Container>
